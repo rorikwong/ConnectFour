@@ -1,0 +1,37 @@
+﻿```html
+<div> 
+<HeadContent>
+	<style>
+		:root {
+			--board-bg: yellow; 	/** the color of the board **/
+			--player1: blue;		/** Player 1's piece color **/
+			--player2: red;			/** Player 2's piece color **/
+		}
+	</style>
+ </HeadContent>
+ </div>
+...
+```
+
+These CSS variables `--board-bg`, `--player1: blue`, `--player2: red` will be picked up and used in the rest of our stylesheet for this component.
+
+Next, we'll add a completed stylesheet for the game from the 0-start folder in this repository.
+
+
+
+
+
+<div>
+    <div class="board">
+        @for (var i = 0; i < 42; i++)
+        {
+            <span class="container">
+                <span></span>
+            </span>
+        }
+    </div>
+</div>
+
+@code {
+
+}
